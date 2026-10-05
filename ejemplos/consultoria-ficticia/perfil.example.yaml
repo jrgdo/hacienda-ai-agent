@@ -1,0 +1,24 @@
+version: 1
+ejercicio: 2026
+residencia_fiscal:
+  pais: ES
+  comunidad_autonoma: EJEMPLO
+situacion:
+  forma: autonomo_persona_fisica
+  fecha_alta: 2026-01-01
+  regimen_estimacion: estimacion_directa_por_confirmar
+actividades:
+  - id: actividad_1
+    descripcion: Servicios de consultoría ficticios
+    epigrafe_iae: POR_CONFIRMAR
+    fecha_inicio: 2026-01-01
+    naturaleza: profesional_por_confirmar
+iva:
+  regimen: por_confirmar
+operaciones:
+  clientes_espana: true
+  clientes_ue: false
+  clientes_fuera_ue: false
+  marketplaces: []
+pendientes:
+  - Confirmar epígrafe y régimen con documentación censal ficticia

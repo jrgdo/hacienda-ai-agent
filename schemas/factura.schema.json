@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Factura",
+  "type": "object",
+  "required": ["id", "tipo", "fecha", "numero", "base_imponible", "total"],
+  "properties": {
+    "id": {"type": "string"},
+    "tipo": {"enum": ["emitida", "recibida"]},
+    "fecha": {"type": "string", "format": "date"},
+    "numero": {"type": "string"},
+    "contraparte_id": {"type": ["string", "null"]},
+    "pais": {"type": ["string", "null"]},
+    "base_imponible": {"type": "number"},
+    "tipo_iva": {"type": ["number", "null"]},
+    "cuota_iva": {"type": ["number", "null"]},
+    "retencion_irpf": {"type": ["number", "null"]},
+    "total": {"type": "number"},
+    "actividad_id": {"type": ["string", "null"]},
+    "archivo_local": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

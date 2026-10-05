@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Transacción fiscal revisable",
+  "type": "object",
+  "required": ["id_origen", "fecha", "descripcion_original", "importe", "moneda", "categoria", "estado_revision"],
+  "properties": {
+    "id_origen": {"type": "string"},
+    "fecha": {"type": "string", "format": "date"},
+    "fecha_devengo": {"type": ["string", "null"], "format": "date"},
+    "descripcion_original": {"type": "string"},
+    "importe": {"type": "number"},
+    "moneda": {"type": "string", "minLength": 3, "maxLength": 3},
+    "categoria": {"type": "string"},
+    "actividad_id": {"type": ["string", "null"]},
+    "documento_id": {"type": ["string", "null"]},
+    "tratamiento_irpf": {"type": "string"},
+    "tratamiento_iva": {"type": "string"},
+    "porcentaje_afectacion": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+    "estado_evidencia": {"enum": ["completa", "parcial", "solo_banco", "ausente"]},
+    "estado_revision": {"enum": ["pendiente", "confirmado_usuario", "requiere_documento", "requiere_profesional"]},
+    "explicacion": {"type": "string"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,35 @@
+version: 1
+actualizado_el: null
+ejercicio: null
+residencia_fiscal:
+  pais: ES
+  comunidad_autonoma: null
+situacion:
+  forma: autonomo_persona_fisica
+  fecha_alta: null
+  fecha_baja: null
+  regimen_estimacion: por_confirmar
+actividades:
+  - id: actividad_1
+    descripcion: null
+    epigrafe_iae: null
+    fecha_inicio: null
+    naturaleza: por_confirmar
+iva:
+  regimen: por_confirmar
+  prorrata: por_confirmar
+operaciones:
+  clientes_espana: por_confirmar
+  clientes_ue: por_confirmar
+  clientes_fuera_ue: por_confirmar
+  consumidores_finales: por_confirmar
+  marketplaces: []
+estructura:
+  empleados: por_confirmar
+  profesionales_contratados: por_confirmar
+  alquiler_sujeto_retencion: por_confirmar
+  local: por_confirmar
+  vivienda_afecta: por_confirmar
+  vehiculo: por_confirmar
+modelos_previos: []
+pendientes: []

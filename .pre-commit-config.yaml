@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: privacidad
+        name: Revisar archivos preparados para publicar
+        entry: python3 herramientas/comprobar_privacidad.py --staged
+        language: system
+        pass_filenames: false
+        always_run: true

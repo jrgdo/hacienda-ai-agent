@@ -1,0 +1,40 @@
+# Datos privados del usuario
+datos-usuario/**
+!datos-usuario/README.md
+*.local.yaml
+*.local.yml
+*.local.json
+*.local.csv
+*.local.xlsx
+*.local.pdf
+
+# Certificados y secretos
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+*.cer
+
+# Documentos fiscales y bancarios fuera del directorio previsto
+*extracto*.pdf
+*extracto*.csv
+*factura*.pdf
+*declaracion*.pdf
+*declaración*.pdf
+*justificante*.pdf
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/
+work/
+*.tmp
+~$*

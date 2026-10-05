@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bien de inversión",
+  "type": "object",
+  "required": ["id", "descripcion", "fecha_adquisicion", "coste_base", "porcentaje_afectacion", "estado_revision"],
+  "properties": {
+    "id": {"type": "string"},
+    "descripcion": {"type": "string"},
+    "fecha_adquisicion": {"type": "string", "format": "date"},
+    "fecha_puesta_uso": {"type": ["string", "null"], "format": "date"},
+    "coste_base": {"type": "number"},
+    "iva": {"type": ["number", "null"]},
+    "porcentaje_afectacion": {"type": "number", "minimum": 0, "maximum": 100},
+    "vida_util_anos": {"type": ["number", "null"], "exclusiveMinimum": 0},
+    "metodo": {"type": ["string", "null"]},
+    "estado_revision": {"enum": ["pendiente", "confirmado_usuario", "requiere_documento", "requiere_profesional"]}
+  },
+  "additionalProperties": true
+}

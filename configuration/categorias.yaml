@@ -1,0 +1,30 @@
+version: 1
+categorias:
+  - id: ingreso_actividad
+    grupo: ingreso
+  - id: gasto_operativo
+    grupo: gasto
+  - id: existencias
+    grupo: gasto
+  - id: bien_inversion
+    grupo: activo
+  - id: gasto_mixto
+    grupo: revision
+  - id: personal_no_deducible
+    grupo: excluido
+  - id: traspaso_propio
+    grupo: excluido
+  - id: liquidacion_plataforma
+    grupo: revision
+  - id: pendiente_revision
+    grupo: revision
+estados_evidencia:
+  - completa
+  - parcial
+  - solo_banco
+  - ausente
+estados_revision:
+  - pendiente
+  - confirmado_usuario
+  - requiere_documento
+  - requiere_profesional

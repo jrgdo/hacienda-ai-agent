@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Borrador de declaración",
+  "type": "object",
+  "required": ["modelo", "ejercicio", "periodo", "estado", "casillas"],
+  "properties": {
+    "modelo": {"type": "string"},
+    "ejercicio": {"type": "integer"},
+    "periodo": {"type": "string"},
+    "tipo_presentacion": {"enum": ["inicial", "complementaria", "rectificacion", "por_confirmar"]},
+    "estado": {"enum": ["borrador", "revisado_usuario", "presentado"]},
+    "fuentes_verificadas": {"type": "array", "items": {"type": "string"}},
+    "casillas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["numero", "importe", "procedencia", "estado_revision"],
+        "properties": {
+          "numero": {"type": "string"},
+          "importe": {"type": ["number", "null"]},
+          "procedencia": {"type": "string"},
+          "estado_revision": {"type": "string"}
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

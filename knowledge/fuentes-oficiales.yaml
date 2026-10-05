@@ -1,0 +1,23 @@
+version: 1
+politica: Verificar la página específica y el ejercicio antes de aplicar una regla.
+fuentes:
+  - organismo: Agencia Tributaria
+    nombre: Sede electrónica
+    url: https://sede.agenciatributaria.gob.es/
+    uso: modelos, instrucciones, plazos y trámites
+  - organismo: Agencia Tributaria
+    nombre: Calendario del contribuyente
+    url: https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente.html
+    uso: fechas de presentación
+  - organismo: BOE
+    nombre: Legislación consolidada
+    url: https://www.boe.es/buscar/legislacion.php
+    uso: normativa vigente
+  - organismo: Seguridad Social
+    nombre: Portal de la Tesorería
+    url: https://portal.seg-social.gob.es/
+    uso: alta, cotización y trámites RETA
+  - organismo: Dirección General de Tributos
+    nombre: Consultas tributarias
+    url: https://petete.tributos.hacienda.gob.es/consultas/
+    uso: doctrina administrativa

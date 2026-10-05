@@ -1,0 +1,2 @@
+id_origen,fecha,descripcion_original,importe,moneda,categoria,actividad_id,documento_id,tratamiento_irpf,tratamiento_iva,porcentaje_afectacion,estado_evidencia,estado_revision,explicacion
+EJEMPLO-001,2026-01-15,SUSCRIPCION SOFTWARE EJEMPLO,-24.20,EUR,gasto_operativo,actividad_1,F-EJEMPLO-001,por_confirmar,por_confirmar,100,completa,pendiente,Operación ficticia para mostrar el formato
